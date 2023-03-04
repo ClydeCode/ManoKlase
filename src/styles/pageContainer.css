@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+
+.top-container {
+    margin-top: 20px;
+    margin: 10px auto;
+    border-top: 2px solid white;
+    width: 40%;
+}
+
+.top-container .title {
+    text-align: center;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem;
+    font-style: italic;
+    letter-spacing: 1.7px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .top-container {
+        width: 280px;
+    }
+
+    .top-container .title {
+        font-size: 1.2rem;
+    }
+}
