@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&display=swap');
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 5px 70px;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.logo {
+    font-size: 1.6rem;
+    user-select: none;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    height: 100%;
+    gap: 20px;
+}
+
+.nav-items a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    color: white;
+    border-radius: 7px;
+    height: 45px;
+    width: 135px;
+}
+
+.nav-items a:visited {
+    visibility: hidden;
+}
+
+.nav-items .active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-items a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-btn {
+    position: absolute;
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        padding: 5px 25px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .nav-btn {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    .nav-items a {
+        height: auto;
+    }
+
+    .nav-items .active {
+        background: none;
+    }
+
+    .nav-items a:hover:after {
+        opacity: 0;
+    }
+
+    .nav-items a:hover {
+        background: none;
+    }
+
+    .nav-items .active:after {
+        width: 0%;
+    }
+
+    .responsive-nav {
+        transform: none;
+    }
+}

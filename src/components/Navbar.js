@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from 'react-icons/fa';
+import "../styles/navbar.css";
 
 export default function Navbar() {
     const navRef = useRef();
@@ -11,7 +12,7 @@ export default function Navbar() {
 
     return (
         <header>
-            <h2 className='logo'>Mes3B</h2>
+            <h2 className='logo'>Mano Klasė</h2>
             <nav className='nav-items' ref={navRef}>
                 <NavLink to='/'>Pagrindinis</NavLink>
                 <NavLink to='/Naujienos'>Naujienos</NavLink>
