@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap');
+.news-card {
+    margin: 0 0 60px 0;
+
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.news-card:hover {
+    background-color: rgba(255, 255, 255, .1);
+    cursor: pointer;
+}
+
+.news-card .datetime-container {
+    width: 80px;
+    border-bottom: white solid 2px;
+    padding: 0 0px 8px 0;
+    font-size: 1.5rem;
+}
+
+.news-card .datetime-container .datetime-container-center {
+    width: 65px;
+}
+
+.news-card .datetime-container #number {
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.news-card .datetime-container #month {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.news-card #title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 30px 0 20px 0;
+    text-align: center;
+}
+
+.news-card #desc {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.news-card .empty-image-container {
+    background-color: white;
+    width: 285px;
+    height: 185px;
+    margin-top: 20px;
+    align-self: center;
+}

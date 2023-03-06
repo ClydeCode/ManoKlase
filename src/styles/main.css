@@ -1,0 +1,7 @@
+.main-page-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 90px;
+}
