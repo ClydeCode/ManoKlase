@@ -1,12 +1,12 @@
 import Navbar from "../components/Navbar";
-import PageContainer from "../components/PageContainer";
+import PageTitle from "../components/PageTitle";
 
 
 export default function News() {
     return (
         <div>
             <Navbar />
-            <PageContainer title="Naujienos" />
+            <PageTitle title="Naujienos" />
         </div>
     )
 }
