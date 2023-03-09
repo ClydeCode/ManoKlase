@@ -1,0 +1,58 @@
+.news-card {
+    display: flex;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 65%;
+    margin: 15px 0 0 100px;
+}
+
+.news-card-reverse {
+    margin: 50px 0 0 -100px;
+}
+
+.news-card .news-card-text {
+    width: 300px;
+}
+
+.news-card:hover {
+    background-color: rgba(255, 255, 255, .1);
+    cursor: pointer;
+}
+
+.news-card #title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 25px 35px 0 0;
+    text-align: end;
+}
+
+.news-card #desc {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px 35px 0 0;
+    text-align: end;
+}
+
+.news-card #reverse-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 25px 0 0 35px;
+    text-align: start;
+}
+
+.news-card #reverse-desc {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px 0 0 35px;
+    text-align: start;
+}
+
+.news-card .empty-image-container {
+    background-color: white;
+    width: 285px;
+    height: 185px;
+    align-self: center;
+}
