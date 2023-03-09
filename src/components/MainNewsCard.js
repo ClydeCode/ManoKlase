@@ -2,7 +2,7 @@ import "../styles/mainNewsCard.css";
 
 export default function MainNewsCard() {
     return (
-        <div className="news-card">
+        <div className="main-news-card">
             <div className="datetime-container">
                 <div className="datetime-container-center">
                     <p id="number">24</p>
