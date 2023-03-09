@@ -1,6 +1,6 @@
-import "../styles/newsCard.css";
+import "../styles/mainNewsCard.css";
 
-export default function NewsCard() {
+export default function MainNewsCard() {
     return (
         <div className="news-card">
             <div className="datetime-container">
