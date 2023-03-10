@@ -13,6 +13,7 @@ export default function News() {
                 <div className="news-page-content-cards">
                     <NewsCard reverse={false} />
                     <NewsCard reverse={true} />
+                    <NewsCard reverse={false} />
                 </div>
             </div>
         </div>

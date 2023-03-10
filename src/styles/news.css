@@ -16,8 +16,24 @@
     width: 150px;
 }
 
-.news-page-content .news-page-content-cards {
+.news-page-content-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.news-page-content-cards::-webkit-scrollbar {
+    width: 10px;
+}
+
+.news-page-content-cards::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+
+.news-page-content-cards::-webkit-scrollbar-thumb {
+    background-color: rgba(144, 12, 80, 0.6);
+    outline: 1px solid rgba(0, 0, 0, 0);
 }
