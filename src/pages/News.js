@@ -5,9 +5,9 @@ import NewsCard from "../components/NewsCard";
 import {useRef, useState} from "react";
 
 export default function News() {
-    const [date, setDate] = useState("2023-09");
     const index = useRef(0);
-    const data = [{"position": 220, "date": "2023-06"}, {"position": 460, "date": "2023-03"}];
+    const data = [{"position": 120, "date": "2023-06"}, {"position": 320, "date": "2023-03"}, {"position": 520, "date": "2023-01"}];
+    const [date, setDate] = useState(data[index.current].date);
 
     function handleScroll(e) {
         if (index.current > 0) {
