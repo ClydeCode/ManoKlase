@@ -5,11 +5,9 @@ export default function NewsCard(props) {
         return (
             <div className="news-card">
                 <div className="news-card-text">
-                    <p id="title">Europos kalbų diena</p>
+                    <p id="title">{props.title}</p>
                     <p id="desc">
-                        Rugsėjo 26 dieną gimnazijos aktų
-                        salėje vyko renginys, skirtas
-                        Europos kalbų dienai
+                        {props.description}
                     </p>
                 </div>
                 <div className="empty-image-container"></div>
@@ -20,14 +18,12 @@ export default function NewsCard(props) {
             <div className="news-card news-card-reverse">
                 <div className="empty-image-container"></div>
                 <div className="news-card-text">
-                    <p id="reverse-title">Europos kalbų diena</p>
+                    <p id="reverse-title">{props.title}</p>
                     <p id="reverse-desc">
-                        Rugsėjo 26 dieną gimnazijos aktų
-                        salėje vyko renginys, skirtas
-                        Europos kalbų dienai
+                        {props.description}
                     </p>
                 </div>
             </div>
-            )
+        )
     }
 }
