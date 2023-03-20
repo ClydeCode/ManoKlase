@@ -3,7 +3,7 @@ import "../styles/newsCard.css";
 export default function NewsCard(props) {
     if(!props.reverse) {
         return (
-            <div className="news-card">
+            <div className="news-card" id={props.createdDate}>
                 <div className="news-card-text">
                     <p id="title">{props.title}</p>
                     <p id="desc">
@@ -15,7 +15,7 @@ export default function NewsCard(props) {
         )
     } else {
         return (
-            <div className="news-card news-card-reverse">
+            <div className="news-card news-card-reverse" id={props.createdDate}>
                 <div className="empty-image-container"></div>
                 <div className="news-card-text">
                     <p id="reverse-title">{props.title}</p>
