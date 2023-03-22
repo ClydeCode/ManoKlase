@@ -5,3 +5,9 @@
     gap: 40px;
     margin-top: 90px;
 }
+
+@media only screen and (max-width: 1200px) {
+    .main-page-content {
+        margin-top: 20px;
+    }
+}

@@ -56,3 +56,25 @@
     height: 185px;
     align-self: center;
 }
+
+@media only screen and (max-width: 1200px) {
+    .news-card {
+        width: 80%;
+        margin: 15px 0;
+    }
+
+    .news-card #title,
+    .news-card #reverse-title {
+        font-size: 1.2rem;
+    }
+
+    .news-card #desc,
+    .news-card #reverse-desc {
+        font-size: .8rem;
+    }
+
+    .news-card .empty-image-container {
+        width: 255px;
+        height: 155px;
+    }
+}
