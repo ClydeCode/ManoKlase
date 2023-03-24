@@ -39,6 +39,30 @@ export default function Class() {
                     title="Vardas Pavarde"
                     desc="“Nesureikšminkite gyvenimo. Jūs niekada nepaspruksite iš jo gyvas.” -Elbert Hubbard"
                 />
+                <ClassCard
+                    title="Vardas Pavarde"
+                    desc="“Nesureikšminkite gyvenimo. Jūs niekada nepaspruksite iš jo gyvas.” -Elbert Hubbard"
+                />
+                <ClassCard
+                    title="Vardas Pavarde"
+                    desc="“Nesureikšminkite gyvenimo. Jūs niekada nepaspruksite iš jo gyvas.” -Elbert Hubbard"
+                />
+                <ClassCard
+                    title="Vardas Pavarde"
+                    desc="“Nesureikšminkite gyvenimo. Jūs niekada nepaspruksite iš jo gyvas.” -Elbert Hubbard"
+                />
+                <ClassCard
+                    title="Vardas Pavarde"
+                    desc="“Nesureikšminkite gyvenimo. Jūs niekada nepaspruksite iš jo gyvas.” -Elbert Hubbard"
+                />
+                <ClassCard
+                    title="Vardas Pavarde"
+                    desc="“Nesureikšminkite gyvenimo. Jūs niekada nepaspruksite iš jo gyvas.” -Elbert Hubbard"
+                />
+                <ClassCard
+                    title="Vardas Pavarde"
+                    desc="“Nesureikšminkite gyvenimo. Jūs niekada nepaspruksite iš jo gyvas.” -Elbert Hubbard"
+                />
             </div>
         </div>
     )
