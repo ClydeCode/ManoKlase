@@ -115,5 +115,6 @@ header {
 
     .responsive-nav {
         transform: none;
+        background-color: rgba(0, 0, 0, .5);;
     }
 }
