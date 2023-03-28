@@ -32,7 +32,7 @@ export default function News() {
             const element = scrollDiv.current.childNodes[n];
             const date = element.id.substring(0, 7);
 
-            arr.push({"position": element.offsetTop - 266, "date": date})
+            arr.push({"position": element.offsetTop - 266, "date": date});
         }
 
         positionsAndDates.current = arr;
