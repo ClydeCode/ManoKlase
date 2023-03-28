@@ -41,12 +41,8 @@ export default function News() {
 
     useEffect(() => {
         fetchData()
+            .then(getPositionsAndDates)
     }, []);
-
-    useEffect(() => {
-        if (scrollDiv.current.childNodes.length > 0)
-            getPositionsAndDates();
-    }, [scrollDiv.current]);
 
     return (
         <div>
