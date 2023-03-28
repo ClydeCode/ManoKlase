@@ -53,7 +53,7 @@ export default function News() {
             <Navbar />
             <PageTitle title="Naujienos" />
             <div className="news-page-content">
-                <p id="datetime">{date}</p>
+                <p id="datetime">{date ? date : new Date().getFullYear()}</p>
                 <div className="news-page-content-cards" onScroll={handleScroll} ref={scrollDiv}>
                     {news.map((item, index) => {
                         return <NewsCard
