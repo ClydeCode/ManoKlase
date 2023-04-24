@@ -14,11 +14,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    visibility: hidden;
-}
-
-.edit-modal-active {
-    visibility: visible;
 }
 
 .edit-modal-box {

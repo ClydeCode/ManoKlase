@@ -1,23 +1,23 @@
 import "../styles/editModal.css";
 
-export default function EditModal() {
+export default function EditModal(props) {
     return (
-        <div className="edit-modal edit-modal-active">
+        <div className="edit-modal">
             <div className="edit-modal-box">
                 Edit form
                 <form className="edit-modal-form">
-                    <label for="image">Image:</label>
+                    <label htmlFor="image">Image:</label>
                     <input type="file" id="image"></input>
 
-                    <label for="title">Title:</label>
-                    <input id="title"></input>
+                    <label htmlFor="title">Title:</label>
+                    <input id="title" value={props.title}></input>
 
-                    <label for="description">Description:</label>
-                    <textarea id="description" rows="20"></textarea>
+                    <label htmlFor="description">Description:</label>
+                    <textarea id="description" rows="20" value={props.description}></textarea>
 
                     <div className="edit-modal-form-btns">
                         <button>Submit</button>
-                        <button>Close</button>
+                        <button onClick={props.handleClose}>Close</button>
                     </div>
                 </form>
             </div>
