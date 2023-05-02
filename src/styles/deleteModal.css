@@ -1,0 +1,20 @@
+.delete-modal-box {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    height: 150px;
+    width: 450px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.delete-modal-btns {
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.delete-modal-btns button {
+    width: 100px;
+    height: 30px;
+}
