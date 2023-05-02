@@ -10,6 +10,11 @@
     letter-spacing: 1px;
 }
 
+#admin-page-add-btn {
+    display: inline;
+    cursor: pointer;
+}
+
 .admin-page-content {
     margin-top: 75px;
     display: flex;
@@ -20,10 +25,77 @@
     height: 700px;
 }
 
+.admin-page-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.admin-page-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+
+.admin-page-content::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 53, 23, 0.32);
+    outline: 1px solid rgba(0, 0, 0, 0);
+}
+
 .admin-news-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex: 1 0 auto;
     background-color: rgba(0, 0, 0, .3);
-    border-radius: 5px;
-    width: 60%;
-    height: 30px;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-radius: 4px;
+    min-width: 60%;
+    min-height: 40px;
+    max-height: 40px;
+    padding: 0 10px;
+}
+
+.admin-news-item:hover {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.admin-news-rightside {
+    display: flex;
+    gap: 150px;
+}
+
+.admin-news-item-title {
+    min-width: 200px;
+}
+
+.admin-news-item-date {
+    min-width: 90px;
+}
+
+.admin-news-item-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-news-item-btns button {
+    background: none;
+    border: none;
+    color: white;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .admin-news-item {
+        font-size: .8rem;
+    }
+
+    .admin-news-rightside {
+        gap: 25px;
+    }
+
+    .admin-page {
+        padding: 0 10px;
+    }
 }
