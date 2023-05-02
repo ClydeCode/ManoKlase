@@ -23,18 +23,17 @@ export default function EditModal(props) {
         })
         .then((response) => {
             if (response.ok) window.location.reload();
-        })
-        
+        })  
     }
 
     const handleTitle = (e) => setTitle(e.target.value);
     const handleDescription = (e) => setDescription(e.target.value);
 
     return (
-        <div className="edit-modal">
+        <div className="modal">
             <div className="edit-modal-box">
                 Edit form
-                <form className="edit-modal-form" onSubmit={handleSubmit}>
+                <form className="modal-form" onSubmit={handleSubmit}>
                     <label htmlFor="image">Image:</label>
                     <input type="file" id="image"></input>
 

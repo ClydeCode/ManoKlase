@@ -1,4 +1,4 @@
-.edit-modal {
+.modal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,8 @@
     width: 100%;
 }
 
-.edit-modal-box {
+.edit-modal-box,
+.add-modal-box {
     background-color: rgba(255, 255, 255, 1);
     border-radius: 10px;
     height: 600px;
@@ -24,7 +25,7 @@
     padding: 15px;
 }
 
-.edit-modal-form {
+.modal-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,20 +35,24 @@
 }
 
 .edit-modal-form input,
-.edit-modal-form textarea {
+.edit-modal-form textarea,
+.add-modal-form input,
+.add-modal-form textarea {
     margin-right: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.edit-modal-form-btns {
+.edit-modal-form-btns,
+.add-modal-form-btns {
     margin-top: 100px;
     display: flex;
     align-self: flex-end;
     gap: 10px;
 }
 
-.edit-modal-form-btns button {
+.edit-modal-form-btns button,
+.add-modal-form-btns button {
     width: 100px;
     height: 30px;
 }
