@@ -15,7 +15,7 @@ export default function AddModal(props) {
         formData.append('description', description);
         formData.append('file', image);
 
-        axios.post(`${process.env.REACT_APP_WEBAPI}news`, formData, {
+        axios.post(process.env.REACT_APP_WEBAPI + 'news', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
