@@ -7,13 +7,6 @@ export default function DeleteBox(props) {
 
         fetch(process.env.REACT_APP_WEBAPI + "news/" + props.id, {
             method: "DELETE",
-            // body: JSON.stringify({
-            //     Id: props.id,
-            //     Title: title,
-            //     Description: description,
-            //     ImagePath: props.imagePath,
-            //     CreatedDate: props.createdDate
-            // }),
             headers: {
                 "Content-type": "application/json"
             }
