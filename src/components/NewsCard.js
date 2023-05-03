@@ -10,13 +10,13 @@ export default function NewsCard(props) {
                         {props.description}
                     </p>
                 </div>
-                <div className="empty-image-container"></div>
+                <div className="empty-image-container" src={props.imageURL}></div>
             </div>
         )
     } else {
         return (
             <div className="news-card news-card-reverse" id={props.createdDate}>
-                <div className="empty-image-container"></div>
+                <img className="empty-image-container" src={props.imageURL}></img>
                 <div className="news-card-text">
                     <p id="reverse-title">{props.title}</p>
                     <p id="reverse-desc">

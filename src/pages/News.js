@@ -56,6 +56,7 @@ export default function News() {
                             key={index}
                             title={item.title}
                             description={item.description}
+                            imageURL={item.imagePath}
                             createdDate={item.createdDate}
                             reverse={index % 2}
                         />
