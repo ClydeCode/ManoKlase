@@ -9,13 +9,12 @@ export default function EditModal(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+
         const formData = new FormData();
 
         formData.append('Id', props.id);
         formData.append('Title', title);
         formData.append('Description', description);
-        formData.append('ImagePath', props.imagePath);
         formData.append('CreatedDate', props.createdDate);
 
         if (image) formData.append('file', image);
