@@ -9,7 +9,7 @@ export default function AddModal(props) {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        var formData = new FormData();
+        const formData = new FormData();
 
         formData.append('title', title);
         formData.append('description', description);
@@ -20,8 +20,8 @@ export default function AddModal(props) {
                 'Content-Type': 'multipart/form-data'
             }
         })
-        .then((response) => {
-            if (response.ok) window.location.reload();
+        .then(() => {
+            window.location.reload();
         })
     }
 
