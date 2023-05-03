@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 
 export default function AddModal(props) {
@@ -8,17 +9,15 @@ export default function AddModal(props) {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch(process.env.REACT_APP_WEBAPI + "news", {
-            method: "POST",
-            body: JSON.stringify({
-                Id: 76,
-                Title: title,
-                Description: description,
-                file: image,
-                CreatedDate: '2003-03-03'
-            }),
+        var formData = new FormData();
+
+        formData.append('title', title);
+        formData.append('description', description);
+        formData.append('file', image);
+
+        axios.post(`${process.env.REACT_APP_WEBAPI}news`, formData, {
             headers: {
-                "Content-type": "multipart/form-data;"
+                'Content-Type': 'multipart/form-data'
             }
         })
         .then((response) => {
@@ -26,12 +25,9 @@ export default function AddModal(props) {
         })
     }
 
-    const handleImage = (e) => {
-        setImage(e.target.files[0]);
-    }
-
     const handleTitle = (e) => setTitle(e.target.value);
     const handleDescription = (e) => setDescription(e.target.value);
+    const handleImage = (e) => setImage(e.target.files[0]);
 
     return (
         <div className="modal">
