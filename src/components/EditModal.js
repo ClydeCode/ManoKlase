@@ -1,33 +1,38 @@
 import { useState } from "react";
 import "../styles/editModal.css";
+import axios from "axios";
 
 export default function EditModal(props) {
     const [title, setTitle] = useState(props.title);
     const [description, setDescription] = useState(props.description);
+    const [image, setImage] = useState(null);
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
+        const formData = new FormData();
 
-        fetch(process.env.REACT_APP_WEBAPI + "news/" + props.id, {
-            method: "PUT",
-            body: JSON.stringify({
-                Id: props.id,
-                Title: title,
-                Description: description,
-                ImagePath: props.imagePath,
-                CreatedDate: props.createdDate
-            }),
+        formData.append('Id', props.id);
+        formData.append('Title', title);
+        formData.append('Description', description);
+        formData.append('ImagePath', props.imagePath);
+        formData.append('CreatedDate', props.createdDate);
+
+        if (image) formData.append('file', image);
+
+        axios.put(process.env.REACT_APP_WEBAPI + 'news/' + props.id + (image ? '/withimage/' : ''), formData, {
             headers: {
-                "Content-type": "application/json"
+                'Content-Type': image ? 'multipart/form-data' : 'application/json'
             }
         })
-        .then((response) => {
-            if (response.ok) window.location.reload();
+        .then(() => {
+            window.location.reload();
         })  
     }
 
     const handleTitle = (e) => setTitle(e.target.value);
     const handleDescription = (e) => setDescription(e.target.value);
+    const handleImage = (e) => setImage(e.target.files[0]);
 
     return (
         <div className="modal">
@@ -35,7 +40,7 @@ export default function EditModal(props) {
                 Edit form
                 <form className="modal-form" onSubmit={handleSubmit}>
                     <label htmlFor="image">Image:</label>
-                    <input type="file" id="image"></input>
+                    <input type="file" id="image" onChange={handleImage}></input>
 
                     <label htmlFor="title">Title:</label>
                     <input id="title" value={title} onChange={handleTitle}></input>
