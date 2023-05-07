@@ -15,6 +15,7 @@ export default function EditModal(props) {
         formData.append('Id', props.id);
         formData.append('Title', title);
         formData.append('Description', description);
+        formData.append('ImagePath', props.imagePath);
         formData.append('CreatedDate', props.createdDate);
 
         if (image) formData.append('file', image);

@@ -29,12 +29,12 @@ export default function News() {
         let arr = [];
 
         for (let n = 0; n < scrollDiv.current.childNodes.length; n++) {
-            const element = scrollDiv.current.childNodes[n];
+            const element = scrollDiv.current.childNodes[n].childNodes[0];
             const date = element.id.substring(0, 7);
 
             arr.push({"position": element.offsetTop - 266, "date": date});
         }
-
+        console.log(arr)
         positionsAndDates.current = arr;
         setDate(positionsAndDates.current[0].date);
     }
@@ -54,6 +54,7 @@ export default function News() {
                     {news.map((item, index) => {
                         return <NewsCard
                             key={index}
+                            id={item.id}
                             title={item.title}
                             description={item.description}
                             imageURL={item.imagePath}
