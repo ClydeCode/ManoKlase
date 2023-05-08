@@ -10,17 +10,18 @@ export default function NewsTemplate() {
     const [description, setDescription] = useState('Loading...');
     const [imageURL, setImageURL] = useState('');
 
-    const fetchData = () => {
-        return fetch(process.env.REACT_APP_WEBAPI + "news/" + id)
-            .then(response => response.json())
-            .then(data => {
-                setTitle(data.title);
-                setDescription(data.description);
-                setImageURL(data.imagePath);
-            });
-    }
+    
 
     useEffect(() => {
+        const fetchData = () => {
+            return fetch(process.env.REACT_APP_WEBAPI + "news/" + id)
+                .then(response => response.json())
+                .then(data => {
+                    setTitle(data.title);
+                    setDescription(data.description);
+                    setImageURL(data.imagePath);
+                });
+        }
         fetchData();
     }, []);
 
@@ -29,7 +30,7 @@ export default function NewsTemplate() {
             <Navbar />
             <PageTitle title={title}/>
             <div className="new-page-content-wrap">
-                <img src={imageURL}></img>
+                <img src={imageURL} alt=""></img>
                 <p>{description}</p>
             </div>
         </div>
