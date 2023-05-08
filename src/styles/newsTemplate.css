@@ -8,13 +8,13 @@
 .new-page-content-wrap img {
     margin: 50px 0;
     width: 500px;
-    height: 250px;
-    object-fit: cover;
+    height: 300px;
 }
 
 .new-page-content-wrap p {
     color: white;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: .8px;
+    width: 50%;
 }
