@@ -10,121 +10,121 @@ export default function Class() {
             <PageTitle title="Klasė" />
             <div className="class-page-content-center">
                 <ClassCard
-                    title="Inga_Jakubonienė"
+                    title="Inga Jakubonienė"
                     desc="Gyventi reikia taip, kad atsisukus atgal nebūtų gėda, kas ir koks tu buvai"
                 />
             </div>
             <div className="class-page-content">
                 <ClassCard
-                    title="Augustas_Baršauskas"
+                    title="Augustas Baršauskas"
                     desc="מי שיקרא את זה יהיה תרנגול"
                 />
                 <ClassCard
-                    title="Laurynas_Bulovas"
+                    title="Laurynas Bulovas"
                     desc="Today's pain is tomorrow's power"
                 />
                 <ClassCard
-                    title="Darija_Grybytė"
+                    title="Darija Grybytė"
                     desc="tyngėjau sugalvoti citatą"
                 />
                 <ClassCard
-                    title="Simona_Jasukaitytė"
+                    title="Simona Jasukaitytė"
                     desc="Nori pusryčių į lovą? Miegok virtuvėje..."
                 />
                 <ClassCard
-                    title="Deimantas_Kairys"
+                    title="Deimantas Kairys"
                     desc="Esu 5 minutėmis jaunesnis..."
                 />
                 <ClassCard
-                    title="Danielė_Kairytė"
+                    title="Danielė Kairytė"
                     desc="...Geriausios 5 minutės gyvenime"
                 />
                 <ClassCard
-                    title="Gabrielė_Kavaliauskaitė"
+                    title="Gabrielė Kavaliauskaitė"
                     desc="When you reach the end of your rope, tie a knot in it and hang on"
                 />
                 <ClassCard
-                    title="Austėja_Kubiliūtė"
+                    title="Austėja Kubiliūtė"
                     desc="tyngėjau sugalvoti citatą"
                 />
                 <ClassCard
-                    title="Nedas_Kukoris"
+                    title="Nedas Kukoris"
                     desc="rūkymo zonoje"
                 />
                 <ClassCard
-                    title="Aida_Lauraitytė"
+                    title="Aida Lauraitytė"
                     desc="“tyngėjau sugalvoti citatą"
                 />
                 <ClassCard
-                    title="Sandra_Magelinskaitė"
+                    title="Sandra Magelinskaitė"
                     desc="一切都是相連的，直到你找到它並斷開與靈魂之旅相連的一切——桑德拉"
                 />
                 <ClassCard
-                    title="Domantas_Matas"
+                    title="Domantas Matas"
                     desc="tyngėjau sugalvoti citatą"
                 />
                 <ClassCard
-                    title="Ugnė_Meliūnaitė"
+                    title="Ugnė Meliūnaitė"
                     desc="Lengviau gauti atleidimą negu leidimą😉"
                 />
                 <ClassCard
-                    title="Irūna_Merkelytė"
+                    title="Irūna Merkelytė"
                     desc="“Sunku išbūti žmogumi paprastu” -OG Version"
                 />
                 <ClassCard
-                    title="Arnas_Povilonis"
+                    title="Arnas Povilonis"
                     desc="pp"
                 />
                 <ClassCard
-                    title="Viktorija_Pučekaitė"
+                    title="Viktorija Pučekaitė"
                     desc="tyngėjau sugalvoti citatą"
                 />
                 <ClassCard
-                    title="Aušrius_Rumbutis"
+                    title="Aušrius Rumbutis"
                     desc="jei durniai galėtų skraidyti, ši mokykla būtų oro uostas"
                 />
                 <ClassCard
-                    title="Domas_Sargevičius"
+                    title="Domas Sargevičius"
                     desc="Svarbiausia, kad bandymas matytųsi"
                 />
                 <ClassCard
-                    title="Meida_Smailytė"
+                    title="Meida Smailytė"
                     desc="You never know"
                 />
                 <ClassCard
-                    title="Eligijus_Šileika"
+                    title="Eligijus Šileika"
                     desc="tyngėjau sugalvoti citatą"
                 />
                 <ClassCard
-                    title="Miglė_Tautkutė"
+                    title="Miglė Tautkutė"
                     desc="“Nesureikšminkite gyvenimo. Jūs niekada nepaspruksite iš jo gyvas.” -Elbert Hubbard"
                 />
                 <ClassCard
-                    title="Jonas_Trasauskas"
+                    title="Jonas Trasauskas"
                     desc="Visada reikia tikėti savimi"
                 />
                 <ClassCard
-                    title="Rusnė_Vaitekūnaitė"
+                    title="Rusnė Vaitekūnaitė"
                     desc="another day another slay"
                 />
                 <ClassCard
-                    title="Livita_Valintelytė"
+                    title="Livita Valintelytė"
                     desc="tyngėjau sugalvoti citatą"
                 />
                 <ClassCard
-                    title="Viktorija_Varžinskaitė"
+                    title="Viktorija Varžinskaitė"
                     desc="life is soup and i am fork"
                 />
                 <ClassCard
-                    title="Neilas_Zaborskis"
+                    title="Neilas Zaborskis"
                     desc="once you go black you never go back"
                 />
                 <ClassCard
-                    title="Gabriela_Zamalytė"
+                    title="Gabriela Zamalytė"
                     desc="When life gives you lemonade, make lemons. Life will be all like, “What?!”"
                 />
                 <ClassCard
-                    title="Žemyna_Zavistauskaitė"
+                    title="Žemyna Zavistauskaitė"
                     desc="tyngėjau sugalvoti citatą"
                 />
             </div>
