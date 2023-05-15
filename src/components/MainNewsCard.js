@@ -30,8 +30,8 @@ export default function MainNewsCard(props) {
                 </div>
                 <p id="title">{props.title}</p>
                 <p id="desc">
-                    {props.desc.length > 135 ?
-                        `${props.desc.substring(0, 135)}...` : props.desc
+                    {props.desc.length > 100 ?
+                        `${props.desc.substring(0, 100)}...` : props.desc
                     }
                 </p>
                 <img src={props.imageURL} className="image-container"></img>
