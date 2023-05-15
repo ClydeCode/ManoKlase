@@ -12,7 +12,7 @@ export default function Navbar() {
 
     return (
         <header>
-            <h2 className='logo'>Mano Klasė</h2>
+            <h2 className='logo'>Mes3B</h2>
             <nav className='nav-items' ref={navRef}>
                 <NavLink to='/'>Pagrindinis</NavLink>
                 <NavLink to='/Naujienos'>Naujienos</NavLink>
