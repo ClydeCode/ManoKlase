@@ -29,28 +29,29 @@ a {
 .news-card #title {
     font-size: 1.3rem;
     font-weight: 500;
-    padding: 20px 35px 0 0;
+    padding: 5px 35px 0 0;
     text-align: end;
 }
 
 .news-card #desc {
     font-size: 1rem;
     font-weight: 400;
-    padding: 15px 35px 0 0;
+    padding: 8px 35px 0 0;
     text-align: end;
 }
 
 .news-card #reverse-title {
     font-size: 1.4rem;
     font-weight: 500;
-    padding: 15px 0 0 35px;
+    padding: 5px 0 0 35px;
     text-align: start;
+    line-height: 1.1;
 }
 
 .news-card #reverse-desc {
     font-size: 1rem;
     font-weight: 400;
-    padding: 10px 0 0 35px;
+    padding: 8px 0 0 35px;
     text-align: start;
 }
 

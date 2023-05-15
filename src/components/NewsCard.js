@@ -9,7 +9,9 @@ export default function NewsCard(props) {
                     <div className="news-card-text">
                         <p id="title">{props.title}</p>
                         <p id="desc">
-                            {props.description}
+                            {props.description.length > 135 ?
+                                `${props.description.substring(0, 135)}...` : props.description
+                            }
                         </p>
                     </div>
                     <img className="image-container" src={props.imageURL} alt=""></img>
@@ -24,7 +26,9 @@ export default function NewsCard(props) {
                     <div className="news-card-text">
                         <p id="reverse-title">{props.title}</p>
                         <p id="reverse-desc">
-                            {props.description}
+                            {props.description.length > 135 ?
+                                `${props.description.substring(0, 135)}...` : props.description
+                            }
                         </p>
                     </div>
                 </div>
