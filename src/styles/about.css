@@ -1,0 +1,14 @@
+.about-page-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-page-content p {
+    color: white;
+    width: 60%;
+    margin-top: 50px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 50px;
+}
