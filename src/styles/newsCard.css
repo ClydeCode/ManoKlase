@@ -18,7 +18,7 @@ a {
 }
 
 .news-card .news-card-text {
-    width: 300px;
+    width: 330px;
 }
 
 .news-card:hover {
@@ -27,23 +27,23 @@ a {
 }
 
 .news-card #title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 500;
-    padding: 25px 35px 0 0;
+    padding: 20px 35px 0 0;
     text-align: end;
 }
 
 .news-card #desc {
     font-size: 1rem;
     font-weight: 400;
-    padding: 10px 35px 0 0;
+    padding: 15px 35px 0 0;
     text-align: end;
 }
 
 .news-card #reverse-title {
     font-size: 1.4rem;
     font-weight: 500;
-    padding: 25px 0 0 35px;
+    padding: 15px 0 0 35px;
     text-align: start;
 }
 
