@@ -8,9 +8,6 @@
 .new-page-content-wrap img {
     margin: 50px 0;
     width: 500px;
-    height: 450px;
-    object-fit: cover;
-    scale: 1;
 }
 
 .new-page-content-wrap p {
@@ -19,4 +16,5 @@
     font-size: 1.2rem;
     letter-spacing: .8px;
     width: 50%;
+    margin-bottom: 50px;
 }
