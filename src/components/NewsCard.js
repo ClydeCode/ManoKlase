@@ -20,7 +20,7 @@ export default function NewsCard(props) {
         return (
             <Link to={`/template/${props.id}`}>
                 <div className="news-card news-card-reverse" id={props.createdDate}>
-                    <img className="image-container" src={props.imageURL} alt=""></img>
+                    <img className="image-container" src={"https://" + props.imageURL} alt=""></img>
                     <div className="news-card-text">
                         <p id="reverse-title">{props.title}</p>
                         <p id="reverse-desc">

@@ -10,11 +10,14 @@ export default function News() {
     const [date, setDate] = useState();
     const scrollDiv = useRef();
 
-    const fetchData = () => {
+    const fetchData = async () => {
         return fetch(process.env.REACT_APP_WEBAPI + "news")
             .then(response => response.json())
             .then(data => data.sort((a, b) => Date.parse(a.createdDate) > Date.parse(b.createdDate) ? -1 : 1))
-            .then(sortedData => setNews(sortedData));
+            .then(sortedData => {
+                setNews(sortedData);
+                return sortedData;
+            });
     }
 
     function handleScroll(e) {
@@ -25,8 +28,10 @@ export default function News() {
         })
     }
 
-    function getPositionsAndDates() {
+    async function getPositionsAndDates() {
         let arr = [];
+        
+        if (scrollDiv.current.childNodes.length == 0) return;
 
         for (let n = 0; n < scrollDiv.current.childNodes.length; n++) {
             const element = scrollDiv.current.childNodes[n].childNodes[0];
@@ -34,15 +39,18 @@ export default function News() {
 
             arr.push({"position": element.offsetTop - 266, "date": date});
         }
-        console.log(arr)
+
         positionsAndDates.current = arr;
         setDate(positionsAndDates.current[0].date);
     }
 
     useEffect(() => {
-        fetchData()
-            .then(getPositionsAndDates)
+        fetchData();
     }, []);
+
+    useEffect(() => {
+        getPositionsAndDates();
+    }, [news]);
 
     return (
         <div>
