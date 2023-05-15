@@ -1,21 +1,41 @@
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../styles/mainNewsCard.css";
 
-export default function MainNewsCard() {
+export default function MainNewsCard(props) {
+    const [day, setDay] = useState(2);
+    const [month, setMonth] = useState('Sausis');
+
+    function handleDate() {
+        const months = ['Sausis', 'Vasaris', 'Kovas', 'Balandis',
+                        'Gegužė', 'Birželis', 'Liepa', 'Rugpjūtis',
+                        'Rugsėjis', 'Spalis', 'Lapkritis', 'Gruodis']
+
+        setDay(props.createdDate.substring(8, 10));
+        setMonth(months[props.createdDate.substring(5, 7).replace('0', '')]);
+    }
+
+    useEffect(() => {
+        handleDate();
+    }, []);
+
     return (
-        <div className="main-news-card">
-            <div className="datetime-container">
-                <div className="datetime-container-center">
-                    <p id="number">24</p>
-                    <p id="month">Birželis</p>
+        <Link to={`/template/${props.id}`}>
+            <div className="main-news-card">
+                <div className="datetime-container">
+                    <div className="datetime-container-center">
+                        <p id="number">{day}</p>
+                        <p id="month">{month}</p>
+                    </div>
                 </div>
+                <p id="title">{props.title}</p>
+                <p id="desc">
+                    {props.desc.length > 135 ?
+                        `${props.desc.substring(0, 135)}...` : props.desc
+                    }
+                </p>
+                <img src={props.imageURL} className="image-container"></img>
             </div>
-            <p id="title">Europos kalbų diena</p>
-            <p id="desc">
-                Rugsėjo 26 dieną gimnazijos aktų
-                salėje vyko renginys, skirtas
-                Europos kalbų dienai
-            </p>
-            <div className="empty-image-container"></div>
-        </div>
+        </Link>
     )
 }
