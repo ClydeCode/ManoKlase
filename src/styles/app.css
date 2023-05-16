@@ -10,8 +10,9 @@ body {
     background-repeat: no-repeat;
     background-position-y: -300px;
     background-attachment: scroll;
+    min-height: 100%;
 }
 
-html, body {
-    height: 100vh;
+html {
+    height: 100%;
 }
