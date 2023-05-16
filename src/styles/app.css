@@ -9,10 +9,10 @@ body {
     background-image: url("/src/assets/images/background.png");
     background-repeat: no-repeat;
     background-position-y: -300px;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 html,body {
     height: 100vh;
-    overflow-y: auto;
+    overflow-x: auto;
 }
