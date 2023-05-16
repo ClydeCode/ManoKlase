@@ -53,7 +53,7 @@ export default function Class() {
                 />
                 <ClassCard
                     title="Aida Lauraitytė"
-                    desc="“tyngėjau sugalvoti citatą"
+                    desc="tyngėjau sugalvoti citatą"
                 />
                 <ClassCard
                     title="Sandra Magelinskaitė"
