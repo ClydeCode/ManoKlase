@@ -10,4 +10,5 @@ body {
     background-repeat: no-repeat;
     background-position-y: -300px;
     background-attachment: fixed;
+    height: 100vh;
 }
