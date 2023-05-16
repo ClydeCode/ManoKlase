@@ -17,4 +17,19 @@
     letter-spacing: .8px;
     width: 50%;
     margin-bottom: 50px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .new-page-content-wrap img {
+        width: 300px;
+    }
+
+    .new-page-content-wrap p {
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 1.15rem;
+        letter-spacing: .8px;
+        width: 75%;
+    }
 }
