@@ -12,7 +12,7 @@ export default function MainNewsCard(props) {
                         'Rugsėjis', 'Spalis', 'Lapkritis', 'Gruodis']
 
         setDay(props.createdDate.substring(8, 10));
-        setMonth(months[props.createdDate.substring(5, 7).replace('0', '')]);
+        setMonth(months[props.createdDate.substring(5, 7).replace('0', '') - 1]);
     }
 
     useEffect(() => {
