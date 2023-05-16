@@ -12,8 +12,7 @@ body {
     background-attachment: scroll;
 }
 
-html,body {
+html, body {
     height: 100vh;
-    overflow-x: auto;
-    scroll-behavior: smooth;
+    overflow-x: scroll;
 }
