@@ -61,7 +61,7 @@ export default function Class() {
                 />
                 <ClassCard
                     title="Domantas Matas"
-                    desc="tyngėjau sugalvoti citatą"
+                    desc="Per gyvenimą, žmogus privalo patirti tokį dalyką, kurio niekada gyvenime neužmirš"
                 />
                 <ClassCard
                     title="Ugnė Meliūnaitė"
