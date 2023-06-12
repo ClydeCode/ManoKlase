@@ -25,7 +25,7 @@ export default function Class() {
                 />
                 <ClassCard
                     title="Darija Grybytė"
-                    desc="tyngėjau sugalvoti citatą"
+                    desc="tingejau sugalvoti citatą"
                 />
                 <ClassCard
                     title="Simona Jasukaitytė"
@@ -45,7 +45,7 @@ export default function Class() {
                 />
                 <ClassCard
                     title="Austėja Kubiliūtė"
-                    desc="tyngėjau sugalvoti citatą"
+                    desc="tingejau sugalvoti citatą"
                 />
                 <ClassCard
                     title="Nedas Kukoris"
@@ -53,7 +53,7 @@ export default function Class() {
                 />
                 <ClassCard
                     title="Aida Lauraitytė"
-                    desc="tyngėjau sugalvoti citatą"
+                    desc="tingejau sugalvoti citatą"
                 />
                 <ClassCard
                     title="Sandra Magelinskaitė"
@@ -77,7 +77,7 @@ export default function Class() {
                 />
                 <ClassCard
                     title="Viktorija Pučekaitė"
-                    desc="tyngėjau sugalvoti citatą"
+                    desc="tingejau sugalvoti citatą"
                 />
                 <ClassCard
                     title="Aušrius Rumbutis"
@@ -93,7 +93,7 @@ export default function Class() {
                 />
                 <ClassCard
                     title="Eligijus Šileika"
-                    desc="tyngėjau sugalvoti citatą"
+                    desc="tingejau sugalvoti citatą"
                 />
                 <ClassCard
                     title="Miglė Tautkutė"
@@ -109,7 +109,7 @@ export default function Class() {
                 />
                 <ClassCard
                     title="Livita Valintelytė"
-                    desc="tyngėjau sugalvoti citatą"
+                    desc="tualeto veteranas"
                 />
                 <ClassCard
                     title="Viktorija Varžinskaitė"
@@ -125,7 +125,7 @@ export default function Class() {
                 />
                 <ClassCard
                     title="Žemyna Zavistauskaitė"
-                    desc="tyngėjau sugalvoti citatą"
+                    desc="tingejau sugalvoti citatą"
                 />
             </div>
         </div>

@@ -9,10 +9,11 @@ export default function About() {
             <PageTitle title="Apie"/>
             <div className="about-page-content">
                 <p>
-                    Šių metų rugsėjo mėnesį gimė projektinio darbo idėja - klasės tinklapis. Pastangų šiam tinklapiui sukurti idėjau tiek, kiek dedu
-                    ruošiantis matematikos kontroliniui - 0. Bet vis dėl to, jis čia - aš aprašiau, jūs skaitot. Tikiuosi kad 3B mokiniams (ir tiem, kas
-                    vertins mano projektinį darbą) patiks šis tinklapis. Kaip vienas šios nuostabios klasės mokinių yra pasakęs "svarbiausia, kad
-                    bandymas matytųsi".
+                    Šių metų rugsėjo mėnesį gimė projektinio darbo idėja - klasės tinklapis. 
+                    Praleidus keletą dienų prie kompiuterio spaudant įvairius klaviatūros klavišus atsirado šioks toks tinklapis. 
+                    Bet vis dėl to, jis čia - aš aprašiau, jūs skaitot. 
+                    Tikiuosi kad 3B mokiniams (ir tiems, kas vertins mano projektinį darbą) patiks šis tinklapis. 
+                    Kaip vienas šios nuostabios klasės mokinių yra pasakęs "svarbiausia, kad bandymas matytųsi".
                 </p>
             </div>
         </div>
